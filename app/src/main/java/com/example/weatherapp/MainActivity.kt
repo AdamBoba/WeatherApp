@@ -20,16 +20,17 @@ class MainActivity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.button)
         val editText = findViewById<EditText>(R.id.editText)
         val textView = findViewById<TextView>(R.id.textView)
+        val textView2 = findViewById<TextView>(R.id.textView2)
 
         button.setOnClickListener {
             val city = editText.text.toString()
             if (city.isNotEmpty()) {
-                getWeatherByCity(city, textView)
+                getWeatherByCity(city, textView, textView2)
             }
         }
     }
 
-    private fun getWeatherByCity(city: String, textView: TextView) {
+    private fun getWeatherByCity(city: String, textView: TextView, textView2: TextView) {
         val weatherUrl = "$weatherBaseUrl&q=$city&appid=$apiKey&units=metric"
 
         val request = Request.Builder().url(weatherUrl).build()
@@ -53,10 +54,12 @@ class MainActivity : AppCompatActivity() {
                     val weatherObject = weatherArray.getJSONObject(0)
                     val description = weatherObject.getString("description")
 
-                    val result = "Temperatura w $city: $temperature°C\nOpis: $description"
+                    val tempe = " $city: $temperature°C"
+                    val zach = " $description"
 
                     runOnUiThread {
-                        textView.text = result
+                        textView.text = tempe
+                        textView2.text = zach
                     }
                 } else {
                     runOnUiThread {
