@@ -2,10 +2,15 @@ Aplikacja Pogodowa dla Androida napisana w języku Kotlin. Pozwala użytkownikow
 
 Do realizacji tego celu wykorzystano kilka kluczowych bibliotek:
 
-OkHttp: Biblioteka do wykonywania żądań sieciowych. Umożliwia łatwe tworzenie, wysyłanie i obsługę zapytań HTTP w aplikacji Android.
-org.json: Biblioteka do pracy z formatem JSON. Używana do parsowania danych JSON otrzymanych z API OpenWeatherMap w celu wyodrębnienia potrzebnych informacji o pogodzie.
-androidx.appcompat: Biblioteka Androida do tworzenia aplikacji kompatybilnych wstecznie z różnymi wersjami systemu Android. Zapewnia zestaw narzędzi i komponentów interfejsu użytkownika, które są zgodne z najnowszymi wytycznymi projektowania.
-androidx.core.content.ContextCompat: Biblioteka Androida do dostępu do zasobów aplikacji, takich jak rysunki, kolory czy ciągi znaków. Używana w celu uzyskania dostępu do plików zasobów, takich jak ikony pogody wykorzystywane do ustawienia tła aplikacji w zależności od warunków pogodowych.
+1. OkHttp: Biblioteka do wykonywania żądań sieciowych. Umożliwia łatwe tworzenie, wysyłanie i obsługę zapytań HTTP w aplikacji Android.
+
+2. org.json: Biblioteka do pracy z formatem JSON. Używana do parsowania danych JSON otrzymanych z API OpenWeatherMap w celu wyodrębnienia potrzebnych informacji o pogodzie.
+
+3. androidx.appcompat: Biblioteka Androida do tworzenia aplikacji kompatybilnych wstecznie z różnymi wersjami systemu Android. Zapewnia zestaw narzędzi i komponentów interfejsu użytkownika, które są zgodne z najnowszymi wytycznymi projektowania.
+
+4. androidx.core.content.ContextCompat: Biblioteka Androida do dostępu do zasobów aplikacji, takich jak rysunki, kolory czy ciągi znaków. Używana w celu uzyskania dostępu do plików zasobów, takich jak ikony pogody wykorzystywane do ustawienia tła aplikacji w zależności od warunków pogodowych.
+
+   
 Te biblioteki są kluczowe dla funkcjonowania aplikacji i umożliwiają wygodne i efektywne tworzenie interfejsu użytkownika oraz integrację z zewnętrznymi serwisami, takimi jak OpenWeatherMap.
 
 ![zdj1](https://github.com/AdamBoba/WeatherApp/assets/113714262/93d7e6b7-df70-4b72-8017-8f5f7272247d)
